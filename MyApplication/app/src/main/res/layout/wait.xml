@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.stacktips.speechtotext.MainActivity">
+
+    <LinearLayout
+        android:id="@+id/btnSpeakContainer"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_above="@+id/btnSpeakContainer"
+        android:layout_alignParentTop="true"
+        android:layout_marginBottom="20dp"
+        android:padding="20dp">
+
+
+    </LinearLayout>
+
+    <ImageButton
+        android:id="@+id/btnSpeak"
+        android:layout_width="500dp"
+        android:layout_height="500dp"
+        android:layout_above="@+id/scrollView2"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="39dp"
+        android:background="@null"
+        android:padding="16dp"
+        android:scaleType="fitCenter"
+        android:src="@mipmap/clock" />
+
+    <Button
+        android:id="@+id/button2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentTop="true"
+        android:onClick="wait"
+        android:text="Button" />
+</RelativeLayout>
